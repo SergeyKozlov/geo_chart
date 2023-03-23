@@ -1,5 +1,7 @@
 {
   "require": {
-    "geoip2/geoip2": "~2.0"
+    "geoip2/geoip2": "~2.0",
+    "vlucas/phpdotenv": "5.5.0",
+    "vide.me/datacraft": "dev-master"
   }
 }
