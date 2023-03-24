@@ -20,11 +20,14 @@ require($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php');
 
 //$log = new log();
 
-echo 'by root';
+//echo 'by root';
 
-use VideMe\Datacraft\tm;
+use VideMe\Datacraft\TM;
+//use VideMe\Datacraft;
+use VideMe\Datacraft\nad;
 use VideMe\Datacraft\log\log;
 use VideMe\Datacraft\model\PG_elaboration;
+//use model\PG_elaboration;
 //use VideMe\Datacraft\model\PostgreSQL;
 
 //$tm = new VideMe\Datacraft\TM();
@@ -33,6 +36,7 @@ $log = new log();
 $pg_elaboration = new PG_elaboration();
 
 //$welcome = new VideMe\Datacraft\TM();
+$welcome = new NAD();
 
 //error_reporting(0); // Turn off error reporting
 error_reporting(E_ALL ^ E_DEPRECATED); // Report all errors

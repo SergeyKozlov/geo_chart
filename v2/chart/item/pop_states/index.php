@@ -1,12 +1,22 @@
 <?php
 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/nad/index.php');
+//include_once($_SERVER['DOCUMENT_ROOT'] . '/nad/index.php');
+require($_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php');
 
 //error_reporting(0); // Turn off error reporting
 error_reporting(E_ALL ^ E_DEPRECATED); // Report all errors
 
-$welcome = new NAD();
+use VideMe\Datacraft\TM;
+use VideMe\Datacraft\log\log;
+use VideMe\Datacraft\model\PG_elaboration;
+//use VideMe\Datacraft\model\PostgreSQL;
+//use VideMe\Datacraft\index;
 
+
+//$tm = new VideMe\Datacraft\TM();
+$tm = new TM();
+$log = new log();
+$welcome = new NAD();
 //if ()
 $pgShowChartByItem1stDays['item_id'] = $_REQUEST['item'] ?? null;;
 /*$pgShowChartByItem1stDays['d_start'] = $_REQUEST['d_start'] ?? null;;
